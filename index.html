@@ -83,24 +83,24 @@
       <p data-template-id="welcome" class="canva-text font-bold" style="color: rgb(71, 38, 111); font-weight: 400; font-style: normal; font-size: 16px;">從小小寵物蛋，開始閃耀的冒險。</p>
      </div>
      <nav class="navgrid" aria-label="主選單"><button type="button" data-go="setup" data-template-id="nav-game" class="canva-button pill primary py-6" style="background: rgb(237, 78, 153); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">🎯 射擊捕獵</button> <button type="button" data-go="farm" data-template-id="nav-farm" class="canva-button pill gold py-6" style="background: rgb(255, 202, 82); color: rgb(120, 70, 26); font-weight: 400; font-style: normal; font-size: 16px;">🐾 寵物農場</button> <button type="button" data-go="dex" data-template-id="nav-dex" class="canva-button pill secondary py-6" style="background: rgb(98, 169, 250); color: rgb(37, 63, 131); font-weight: 400; font-style: normal; font-size: 16px;">📖 寵物圖鑑</button> <button type="button" data-go="shop" data-template-id="nav-shop" class="canva-button pill primary py-6" style="background: rgb(237, 78, 153); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">🛍️ 奇幻商店</button>
-    <!-- 修改後的設計者模式按鈕（增加了 id="admin-btn"） -->
+    
 </nav><button id="admin-btn" type="button" data-go="assets" data-template-id="nav-designer" class="canva-button pill secondary w-full mt-4" style="background: rgb(98, 169, 250); color: rgb(37, 63, 131); font-weight: 400; font-style: normal; font-size: 16px;">🎨 設計者模式</button>
 
-<!-- 自動檢查網址密碼的腳本 -->
+
 <script>
   (function() {
-    // 檢查網址後面有沒有帶有 ?pass=cinpinyin1101
+    
     const urlParams = new URLSearchParams(window.location.search);
     const isAdmin = urlParams.get('pass') === 'cinpinyin1101';
     
-    // 找到你的按鈕
+    
     const adminButton = document.getElementById('admin-btn');
     
     if (adminButton) {
         if (isAdmin) {
-            adminButton.style.setProperty('display', 'block', 'important'); // 管理員網址：顯示按鈕
+            adminButton.style.setProperty('display', 'block', 'important'); 
         } else {
-            adminButton.style.setProperty('display', 'none', 'important');  // 普通玩家網址：強制隱藏按鈕
+            adminButton.style.setProperty('display', 'none', 'important');  
         }
     }
   })();
